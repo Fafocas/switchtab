@@ -1,0 +1,25 @@
+h1 {
+  color: orangered;
+  font-weight: 900;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  width: max-content;
+}
+
+p {
+  color: orangered;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gray-plus {
+  color: gray;
+  font-weight: bold;
+}

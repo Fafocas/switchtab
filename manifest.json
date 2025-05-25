@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "SwitchTab",
+  "description": "Simply allow you to switch tabs using arrow shortcuts.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/logo.png",
+    "32": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "switch-right":{
+      "suggested_key":{
+        "mac": "Alt+Right"
+      },
+      "description": "Switch to the tab on the right"
+    },
+    "switch-left":{
+      "suggested_key":{
+        "mac": "Alt+Left"
+      },
+      "description": "Switch to the tab on the left"
+    }
+  },
+  "host_permissions": [
+    "https://*.example.com/",
+    "http://*/*",
+    "https://*/*"
+  ],
+    "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  
+  "permissions": [
+    "tabs"
+  ]
+}
